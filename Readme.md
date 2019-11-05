@@ -1,6 +1,7 @@
-# Folder and Fike Structure Application
+# Folder and File Crud operations Application
 
-Build a Restful CRUD API for a file and directory operations  using Node.js, Express and MongoDB.
+Build a Restful CRUD API for a file and directory operations without actually creating them  using Node.js, Express and MongoDB.
+
 
 ## Steps to Setup
 
