@@ -16,16 +16,16 @@ module.exports = (app) => {
     // Delete a folder with folderId
     app.delete('/folder/:folderId', folder.delete);
 
-    // Create a new folder
+    // Create a new file
     app.post('/fileData', fileController.create);
 
-    // Retrieve all folders
+    // Retrieve all files within a folder
     app.get('/fileData/:folderId', fileController.findAll);
 
 
-    // Update a file with folderId
+    // Update a file with fileId
     app.put('/fileData/:fileId', fileController.update);
 
-    // Delete a folder with folderId
+    // Delete a file with fileId
     app.delete('/fileData/:fileId', fileController.delete);
 }
