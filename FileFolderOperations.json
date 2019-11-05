@@ -1,0 +1,180 @@
+{
+	"info": {
+		"_postman_id": "ac8341ca-4bdb-4e32-b739-5aadcf6b48d3",
+		"name": "InterviewApp",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "createFolder",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"name\" : \"Test1\",\n\t\"path\" : \"/sai\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "http://localhost:3000/folder"
+			},
+			"response": []
+		},
+		{
+			"name": "fileCreate",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"name\" : \"test.png\",\n\t\"folderId\" : \"5dc181b92d8fe4d4ddbb8b50\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "http://localhost:3000/fileData"
+			},
+			"response": []
+		},
+		{
+			"name": "deleteFile",
+			"request": {
+				"method": "PUT",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"name\" : \"abc\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "http://localhost:3000/fileData/5dc18b7c67f1b1e42712695a"
+			},
+			"response": []
+		},
+		{
+			"name": "listFolders",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": "http://localhost:3000/folder"
+			},
+			"response": []
+		},
+		{
+			"name": "deleteFolder",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": "http://localhost:3000/folder/5dc181b92d8fe4d4ddbb8b50"
+			},
+			"response": []
+		},
+		{
+			"name": "updateFolder",
+			"request": {
+				"method": "PUT",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"name\" : \"test\",\n\t\"path\" : \"/dir1/dir2\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "http://localhost:3000/5dc181b92d8fe4d4ddbb8b50"
+			},
+			"response": []
+		},
+		{
+			"name": "fetchFolder",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": "http://localhost:3000/folder/5dc17c0d3dc0a8cac803ae53"
+			},
+			"response": []
+		},
+		{
+			"name": "deleteFile",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": ""
+			},
+			"response": []
+		},
+		{
+			"name": "updateFile",
+			"request": {
+				"method": "PUT",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"name\" : \"test1.png\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "http://localhost:3000/fileData/5dc18b7c67f1b1e42712695a"
+			},
+			"response": []
+		},
+		{
+			"name": "listFilesInFolder",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": "http://localhost:3000/fileData/5dc181b92d8fe4d4ddbb8b50"
+			},
+			"response": []
+		}
+	],
+	"protocolProfileBehavior": {}
+}
