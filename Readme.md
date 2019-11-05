@@ -53,8 +53,8 @@ payload :
 }
 ```
 
-```bash
 5) Delete the folder
+```bash
 DELETE - http://localhost:3000/folder/:folderId
 ```
 
@@ -88,9 +88,9 @@ payload :
 4) Delete the file
 ```bash
 DELETE - http://localhost:3000/folder/:fileId
-```bash
+```
 
 
 ```bash
 ### For importing the requests directly to postman, import the file "FileFolderOperation.json" in postman 
-```bash
+```
