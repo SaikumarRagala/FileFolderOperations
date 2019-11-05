@@ -25,54 +25,72 @@ You can use postman to test  the apis at <http://localhost:3000>
 ## APIs for Folder Operations
 
 1) create folder 
+```bash
 POST - http://localhost:3000/folder
 payload : 
 {
     "name" : "name of the folder (eg :  "dir1")",
     "path" : "existing directory (eg : "/test")"
 }
+```
 
 2) List all folders
+```bash
 GET - http://localhost:3000/folder/
-
+```
+```bash
 3) Fetch single folder 
 GET - http://localhost:3000/folder/:folderId
+```
 
 4)Update folder name 
+```bash
 PUT - http://localhost:3000/folder/:folderId
 payload : 
 {
     "name" : "name of the folder (eg :  "dir1")",
     "path" : "existing directory (eg : "/test")"
 }
+```
 
+```bash
 5) Delete the folder
 DELETE - http://localhost:3000/folder/:folderId
+```
 
 ## APIs for File Operations
 
 1) create file 
+```bash
 POST - http://localhost:3000/fileData
 payload : 
 {
     "name" : "name of the file (eg :  "test.png")",
     "folderId" : "Existing folderId"
 }
+```
 
+```bash
 2) List all files in a folder
 GET - http://localhost:3000/fileData/:folderId
+```
 
 
-
-3)Update file name 
+3)Update file name
+```bash
 PUT - http://localhost:3000/folder/:fileId
 payload : 
 {
     "name" : "name of the file"
 }
+```
 
 4) Delete the file
+```bash
 DELETE - http://localhost:3000/folder/:fileId
+```bash
 
 
+```bash
 ### For importing the requests directly to postman, import the file "FileFolderOperation.json" in postman 
+```bash
